@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        body{
+            border: 1px solid red;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        .container{
+            display: flex;
+        }
+        .container div{
+            width: 50%;
+        }
+        .container img{
+            width: 100%;
+        }
+        @media screen and (max-width:776px) {
+            .container{
+                flex-direction: column;
+            }
+            .container div{
+                width: 100%;
+            }            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Resnponsive korte ja ja lage -->
+        <ol>
+            <li>viewport meta tag</li>
+            <li>CSS Related Unit</li>
+            <li>body max width and horizontal center align</li>
+            <li>body max width and horizontal center align</li>
+            <li>image fluid</li>
+            <li>multi column: grid layout</li>
+            <li>menu Responsive: Javascript needed</li>
+        </ol>
+    </header>
+    <main>
+        <div class="container">
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+            </div>
+            <div class="tiger">
+                <img src="https://i.natgeofe.com/k/07176791-9577-4e31-b101-b10ca7ca9a3c/Stripes_Tiger-Terrific_KIDS_0722_16x9.jpg" alt="">
+            </div>
+        </div>
+        
+        
+    </main>
+</body>
+</html>

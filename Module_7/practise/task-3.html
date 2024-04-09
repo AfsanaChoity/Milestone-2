@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .image{
+        border: 5px solid red;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+        
+    }
+    @media screen and (max-width: 576px){
+        .image{
+            height: 800px;
+        }
+        
+        img{
+            max-width: 100%;
+            height: 100%;
+            
+        }
+        
+    }
+    @media screen and (min-width: 576px ) and (max-width: 764px) {
+
+        img{
+            max-width: 100%;
+            height: 100%;
+            
+        }
+    }
+</style>
+<body>
+    <div class="image">
+        <img src="https://i.natgeofe.com/k/07176791-9577-4e31-b101-b10ca7ca9a3c/Stripes_Tiger-Terrific_KIDS_0722_16x9.jpg" alt="">
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-4</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            border: 1px solid lightgray;
+            margin-top: 20px;
+            height: 250px;
+        }
+        img{
+            
+            width: 300px;
+            height: 250px;
+            object-fit: cover; 
+    
+        }
+        
+       
+        .text{
+            padding: 10px;
+            /* border: 2px solid red; */
+            margin-left: 20px;
+            
+        }
+        h2, p, button{
+            margin-bottom: 10px;
+        }
+        button{
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 5px;
+            border-radius: 2px;
+        }
+        @media screen and (max-width: 576px) {
+            .container{
+                flex-direction: column;
+                height: 100%;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <section class="one">
+        <div class="container">
+            <div class="image">
+                <img src="../images/burger.jpg" alt="">
+            </div>
+            <div class="text">
+                <h2>This Is Burger</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, veritatis corporis eum placeat alias sed, quibusdam, cumque rerum aliquid harum laboriosam voluptatem? Perferendis quibusdam autem voluptatibus tempora voluptatum officiis maiores.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+
+    </section>
+    <section class="one">
+        <div class="container">
+            <div class="image">
+                <img src="../images/pizza.avif" alt="">
+            </div>
+            <div class="text">
+                <h2>This Is Pizza</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, incidunt, fuga ex minima ipsum quae eum amet ipsam dicta mollitia explicabo consectetur dolore perspiciatis velit repudiandae impedit. Molestias, vero natus.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
